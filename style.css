@@ -1,0 +1,212 @@
+/* Reset page in SCSS */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Setting the font-family to 'bangers' for every text element*/
+body {
+  font-size: 100%;
+  font-family: "Amatic SC", sans-serif;
+}
+
+h2 {
+  color: white;
+  font-size: 20vw;
+  font-family: 'Bangers', cursive;
+  margin: 0px 30px;
+  text-shadow: 8px 8px black;
+}
+
+span {
+  color: yellow;
+}
+
+p {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 40px;
+}
+
+.top-2 {
+  background: url(image1.jpg);
+  background-size: cover;
+  min-height: 50%;
+  width: 100%;
+  float: left;
+  height: 100vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-2 .top-2-text {
+  max-width: 600%;
+  width: calc(100% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top-2 .home-header {
+  color: black;
+  font-size: 10vw;
+  font-family: "Amatic SC", sans-serif;
+  text-shadow: 10px 10px black;
+  margin: 0px 190px;
+  text-shadow: 5px 5px white;
+}
+
+.top-2 .let-me {
+  color: white;
+  text-decoration: none;
+  font-family: "Amatic SC", sans-serif;
+}
+
+.top-2:hover {
+  opacity: 100%;
+}
+
+.top-2:active {
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+}
+
+button {
+  color: whitesmoke;
+  /* Color of the text*/
+  font-size: 9vw;
+  /* Setting the font size of the text */
+  font-family: "Amatic SC", sans-serif;
+  background: black;
+  padding: 15px;
+  border: 0px solid white;
+  opacity: 95%;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+button:active {
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+  position: fixed;
+  z-index: 999;
+}
+
+.top header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto auto;
+  max-width: 1028px;
+  width: calc(100% - 30px);
+  height: 100%;
+}
+
+.top header p {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 30px;
+}
+
+.top header p .landing-direct {
+  text-decoration: none;
+  color: white;
+}
+
+.top header p .landing-direct:hover {
+  cursor: pointer;
+}
+
+.top header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+}
+
+.top header .navbar li {
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.top header .navbar li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: whitesmoke;
+  font-family: "Amatic SC", sans-serif;
+}
+
+.top header .navbar li a:hover {
+  color: yellow;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.top header .ham {
+  height: calc(100% - 5px);
+  display: none;
+}
+
+@media screen and (max-width: 679px) {
+  .top header .ham {
+    display: inline-block;
+    background: whitesmoke;
+    -webkit-box-shadow: 1px 1px 11px black;
+            box-shadow: 1px 1px 11px black;
+  }
+  .top header:hover {
+    cursor: pointer;
+  }
+  .top header .navbar {
+    display: none;
+    background: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */

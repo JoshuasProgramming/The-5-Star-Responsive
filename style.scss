@@ -1,0 +1,177 @@
+/* Reset page in SCSS */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Setting the font-family to 'bangers' for every text element*/
+body{
+    font-size: 100%;
+    font-family: "Amatic SC", sans-serif;
+}
+
+h2{
+    color:rgb(255, 255, 255);
+    font-size:20vw;
+    font-family: 'Bangers', cursive;
+    margin:0px 30px;
+    text-shadow: 8px 8px rgb(0, 0, 0);
+}
+
+span{
+    color:yellow;
+}
+
+p{
+    font-family: "Amatic SC", sans-serif;
+    font-size:40px;
+}
+
+.top-2{
+    background: url(image1.jpg);
+    background-size:cover;
+    min-height: 50%;
+    width:100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .top-2-text{
+        max-width:600%;
+        width: calc(100% - 40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // white-space: nowrap;
+    }
+
+    .home-header{
+        color:black;
+        font-size: 10vw;
+        font-family: "Amatic SC", sans-serif;
+        text-shadow: 10px 10px rgb(0, 0, 0);
+        margin:0px 190px;
+        text-shadow:5px 5px white;
+    }
+
+    .let-me{
+        color:white;
+        text-decoration: none;
+        font-family: "Amatic SC", sans-serif;
+
+    }&:hover{
+        opacity:100%;
+
+    }&:active{
+        box-shadow: 1px 1px 11px black;
+    }
+}
+
+
+button{
+    color:whitesmoke; /* Color of the text*/
+    font-size: 9vw; /* Setting the font size of the text */
+    font-family: "Amatic SC", sans-serif;
+    background:black;
+    padding:15px;
+    border: 0px solid white;
+    opacity: 95%;
+    text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+        opacity:100%;
+    }
+    &:active{
+        box-shadow: 1px 1px 11px black;
+    }
+}
+
+
+.top{
+    display: flex;
+    align-items: center;
+    height:80px;
+    width:100%;
+    background-color: black;
+    color:whitesmoke;
+    box-shadow: 1px 1px 11px black;
+    position: fixed;
+    z-index:999;
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:auto auto;
+        max-width:1028px;
+        width: calc(100% - 30px);
+        height: 100%;
+
+        p{
+            font-family: "Amatic SC", sans-serif;
+            font-size:30px;
+
+            .landing-direct{
+                text-decoration:none;
+                color:white;
+                
+            }
+
+            .landing-direct:hover{
+                cursor:pointer;
+            }
+    
+        }
+
+        .navbar{
+            display: flex;
+            height:30px;
+            
+            li{
+                list-style: none;
+                margin:0px 5px;
+                a{
+                    text-decoration: none;
+                    font-size: 30px;
+                    color: whitesmoke;
+                    font-family: "Amatic SC", sans-serif;
+                    &:hover{
+                        color:yellow;
+                        transition:2s;
+                    }
+                }
+                
+            }
+        }
+
+        .ham{
+            height: calc(100% - 5px);
+            display: none;
+
+        }
+
+        @media screen and (max-width: 679px) {
+            .ham{
+                display:inline-block;
+                background: whitesmoke;
+                box-shadow: 1px 1px 11px black;
+            } &:hover{
+                cursor: pointer;
+
+            }
+
+            .navbar{
+                display:none;
+                background: red;
+            }
+        }
+    }
+}
