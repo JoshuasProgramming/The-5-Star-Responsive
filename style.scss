@@ -1,3 +1,6 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
 /* Reset page in SCSS */
 *{
     margin:0;
@@ -8,30 +11,22 @@
 /*Setting the font-family to 'bangers' for every text element*/
 body{
     font-size: 100%;
-    font-family: "Amatic SC", sans-serif;
+    font-family: 'Architects Daughter', cursive;
 }
 
 h2{
     color:rgb(255, 255, 255);
+    // font-size: 120px;
     font-size:20vw;
-    font-family: 'Bangers', cursive;
+    font-family: 'Architects Daughter', cursive;
     margin:0px 30px;
     text-shadow: 8px 8px rgb(0, 0, 0);
 }
 
-span{
-    color:yellow;
-}
-
-p{
-    font-family: "Amatic SC", sans-serif;
-    font-size:40px;
-}
-
 .top-2{
-    background: url(image1.jpg);
+    background-image: url(image1.jpg);
     background-size:cover;
-    min-height: 50%;
+    min-height: 90%;
     width:100%;
     float: left;
     height: 100vh;
@@ -49,40 +44,82 @@ p{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // white-space: nowrap;
+
+        .home-options{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            flex-direction: column;
+            margin:10px auto;
+            gap:5px;
+        }
+
+        .profile-image-input-container{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap:5px;
+
+            .upload-file-input{
+                max-width:270px;
+                color:whitesmoke; /* Color of the text*/
+                font-size:20px ; /*25px Setting the font size of the text */
+                font-family: 'Architects Daughter', cursive;
+                background:black;
+                padding:15px;
+                border: 0px solid white;
+                opacity: 85%;
+                border-radius: 30px;
+                text-decoration: none;
+            }
+    
+            .upload-file-submit{
+                color:whitesmoke; /* Color of the text*/
+                font-size: 25px; /* Setting the font size of the text */
+                font-family: 'Architects Daughter', cursive;
+                background:black;
+                padding:15px;
+                border: 0px solid white;
+                opacity: 85%;
+                border-radius: 30px;
+                text-decoration: none;
+            }
+        }
+
+        
+
     }
 
     .home-header{
-        color:black;
+        color:rgb(255, 255, 255);
         font-size: 10vw;
-        font-family: "Amatic SC", sans-serif;
-        text-shadow: 10px 10px rgb(0, 0, 0);
-        margin:0px 190px;
-        text-shadow:5px 5px white;
+        font-weight: bold;
+        font-family: 'Architects Daughter', cursive;
+        text-shadow: 5px 5px rgb(0, 0, 0);
+        white-space:nowrap;
     }
 
     .let-me{
         color:white;
         text-decoration: none;
-        font-family: "Amatic SC", sans-serif;
-
     }&:hover{
+        cursor: pointer;
         opacity:100%;
-
     }&:active{
         box-shadow: 1px 1px 11px black;
     }
 }
 
-
 button{
     color:whitesmoke; /* Color of the text*/
-    font-size: 9vw; /* Setting the font size of the text */
-    font-family: "Amatic SC", sans-serif;
+    font-size: 5vw; /* Setting the font size of the text */
+    font-family: 'Architects Daughter', cursive;
     background:black;
     padding:15px;
     border: 0px solid white;
-    opacity: 95%;
+    opacity: 85%;
+    border-radius: 5px;
     text-decoration: none;
 
     &:hover{
@@ -98,7 +135,7 @@ button{
 .top{
     display: flex;
     align-items: center;
-    height:80px;
+    height:90px;
     width:100%;
     background-color: black;
     color:whitesmoke;
@@ -115,9 +152,13 @@ button{
         width: calc(100% - 30px);
         height: 100%;
 
+        span{
+            color:yellow;
+        }
+
         p{
-            font-family: "Amatic SC", sans-serif;
-            font-size:30px;
+            font-family: 'Bangers', cursive;
+            font-size:35px;
 
             .landing-direct{
                 text-decoration:none;
@@ -140,28 +181,25 @@ button{
                 margin:0px 5px;
                 a{
                     text-decoration: none;
-                    font-size: 30px;
+                    font-size: 25px;
                     color: whitesmoke;
-                    font-family: "Amatic SC", sans-serif;
+
                     &:hover{
                         color:yellow;
-                        transition:2s;
+                        transition: 1.5s;
                     }
-                }
-                
+                } 
             }
         }
 
         .ham{
-            height: calc(100% - 5px);
+            height: calc(100% - 39px);
             display: none;
-
         }
 
-        @media screen and (max-width: 679px) {
+        @media screen and (max-width: 600px) {
             .ham{
                 display:inline-block;
-                background: whitesmoke;
                 box-shadow: 1px 1px 11px black;
             } &:hover{
                 cursor: pointer;
@@ -175,3 +213,382 @@ button{
         }
     }
 }
+
+
+.popup{
+    position:fixed;
+    background: rgba(196, 195, 195, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index:999;
+    transition-duration: 1s;
+    transition-property: transform;
+
+    .ham-ul{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 1s ease-in;
+        transform: translate(-6000px, 0px);
+
+        .close-popup{
+            color:red;
+        }
+
+        // transform: translate(-600px,0px);
+    }
+
+    li{
+        list-style: none;
+        margin:10px;
+        a{
+            text-decoration: none;
+            font-size: 60px;
+            color: black;
+        } &:hover{
+            border-bottom: 9px solid orange;
+        }
+    }
+}
+
+.disabled{
+    display: none;
+    background: black;
+}
+
+/*About Section BELOW*/
+
+.about-section{
+    // background: red;
+    background:rgb(255, 255, 113);
+    //height:727px;
+    height:auto;
+
+    .about-text{
+        color:rgb(0, 0, 0);
+        font-size: 4vw;
+        font-family: 'Bangers', cursive;
+
+        // margin:10px 300px;
+    }
+
+    .opening-times-text{
+        color:black;
+        // font-size: 40px;
+        font-size: 5vw;
+        font-family: 'Bangers', cursive;
+        text-shadow: 5px 5px rgb(255, 255, 255);
+        margin:10px 100px;
+    }
+
+    .left-right-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:100%;
+        max-width: 1028px;
+        width: calc(100% - 50px);
+        margin:0px auto;
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align:center;
+        }
+
+        .left{
+            position: static;
+            overflow: visible;
+        }
+
+        .google-api{
+            max-width: 700px;
+            height:300px;
+            width: calc(100% - 50px);
+            position: static;
+            overflow: visible;
+            // max-width: 200px;
+            // height: 200px;
+            color:black;
+            // font-size: 50px;
+            // font-family: "Amatic SC", sans-serif;
+            // margin:auto auto;
+            text-shadow:5px 5px white;
+            border-radius: 15px;
+            box-shadow: 1px 1px 19px black;
+            margin:45px 100px;
+        }
+    }
+}
+
+
+
+
+.login-form-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width:500px;
+    width:calc(100% - 50px);
+    min-height:100px;
+    // background: snow;
+    // border-radius:25px;
+    // box-shadow: 1px 1px 11px black;
+    margin: 25px 0px;
+    // top:50%;
+    //padding:20px;
+
+    .register-form{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction: column;
+        padding: 12px 15px;
+        max-width:600px;
+        width:calc(100% - 20px);
+        min-height:350px;
+        position: absolute;
+        margin: 25px 0px;
+        box-shadow: 1px 1px 11px black;
+        border-radius: 25px;
+        background: black;
+        background:linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    }
+
+    .update-form{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        flex-direction: column;
+        padding: 12px 15px;
+        max-width:600px;
+        width:calc(100% - 20px);
+        min-height:450px;
+        position: absolute;
+        margin: 25px 0px;
+        box-shadow: 1px 1px 11px black;
+        border-radius: 25px;
+        background: black;
+        background:linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+    }
+
+    .register-name, .register-email, .register-password{
+        max-width:600px;
+        width:calc(100% - 50px);
+        min-height:70px;
+        text-align: center;
+        font-size: 25px;
+        font-family: 'Bangers', cursive;
+        outline: none;
+        font-weight:bold;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+
+    .register-btn{
+        max-width:600px;
+        width:calc(100% - 10px);
+        min-height:50px;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Bangers', cursive;
+        background:rgb(255, 255, 86);
+        color:black;
+        opacity: 80%;
+        border-radius: 30px;
+        // position: absolute;
+        // top:85%;
+        // left: 51%;
+        // transform: translate(-50%, -50%);
+        // color:black;
+        // font-size: 30px;
+        // font-family: 'Bangers', cursive;
+        // background:rgb(255, 255, 86);
+        // padding:15px;
+        // border: 0px solid white;
+        // opacity: 80%;
+        // border-radius: 30px;
+        // width:400px;
+        // height:50px;
+    }
+    
+    .register-btn:hover{
+        opacity: 100%;
+        cursor: pointer;
+    }
+    
+    .register-btn:active{
+        box-shadow: 1px 1px 16px white;
+    }
+
+}
+
+
+/* Contact Form BELOW*/
+.contact-section{
+    background-color:rgb(255, 255, 113);
+    height:auto;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+
+    textarea{
+        max-width:500px;
+        height:150px;
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'Bangers', cursive;
+        outline: none;
+        margin: 10px auto;
+        font-weight:bold;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+
+    input{
+        max-width:500px;
+        height:80px;
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'Bangers', cursive;
+        outline: none;
+        margin: 10px auto;
+        font-weight:bold;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+
+
+    .btn-4{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        max-width:25%;
+        width:calc(100% - 0px);
+        min-height:50px;
+        font-size:7vw;
+        color: white;
+        border-radius: 15px;
+        text-decoration: none;
+        background:black;
+        text-align: center;
+        opacity: 90%;
+        margin:70px auto;  
+    }
+    
+    .btn-4:hover{
+        opacity:100%;
+        cursor: pointer;
+    }
+    
+    .btn-4:active{
+        box-shadow: 1px 1px 11px black;
+    }
+
+    .contact-form-container{
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+
+    .contact-header{
+        color:black;
+        font-size: 8vw;
+        font-family: 'Bangers', cursive;
+        text-shadow:5px 5px white;
+
+        .contact-form{
+            
+            // display: flex;
+            // justify-content: center;
+            // align-items:center;
+            // flex-direction: column;
+            // padding: 5px;
+            // max-width:600px;
+            // width:calc(100% - 20px);
+            // min-height:350px;
+            // position: absolute;
+            // margin: auto auto;
+            // color:black;
+            // font-size: 8vw;
+            // font-weight: bold;
+            // font-family: 'Bangers', cursive;
+            // // margin:0px auto;   
+        }
+    }
+
+
+    
+}
+
+/*Food Menu */
+.menu-section{
+    background: black;
+    height: auto;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    flex-direction: row;
+    color:white;
+    text-align: center;
+
+    .food-image1{
+        background-image: url(food-image1.jpg);
+        background-size:cover;
+        max-width:1000px;
+        min-height:100%;
+        border-radius: 15px;
+        border: 3px solid black;
+        
+    }
+
+    .food-image2{
+        background-image: url(food-image2.jpg);
+        background-size:cover;
+        max-width:1000px;
+        min-height:100%;
+        border-radius: 15px;
+        border: 3px solid black;
+    }
+}
+
+// /*Food Menu*/
+
+// .menu-section{
+//     background-color:rgb(255, 255, 113);
+//     .food-container{
+
+//         .food-image1{
+//             background-image: url(food-image1.jpg);
+//             background-size:cover;
+//             max-width:300px;
+//             height:200px;
+//             margin:20px auto;
+            
+//             // min-height: 50%;
+//             // width:45%;
+//             // // float: left;
+//             // height: 100%;
+//             // position: inherit;
+
+//         }
+
+//         .food-image2{
+
+//         }
+//     }
+// }

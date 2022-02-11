@@ -1,3 +1,5 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 /* Reset page in SCSS */
 * {
   margin: 0;
@@ -9,30 +11,21 @@
 /*Setting the font-family to 'bangers' for every text element*/
 body {
   font-size: 100%;
-  font-family: "Amatic SC", sans-serif;
+  font-family: 'Architects Daughter', cursive;
 }
 
 h2 {
   color: white;
   font-size: 20vw;
-  font-family: 'Bangers', cursive;
+  font-family: 'Architects Daughter', cursive;
   margin: 0px 30px;
   text-shadow: 8px 8px black;
 }
 
-span {
-  color: yellow;
-}
-
-p {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 40px;
-}
-
 .top-2 {
-  background: url(image1.jpg);
+  background-image: url(image1.jpg);
   background-size: cover;
-  min-height: 50%;
+  min-height: 90%;
   width: 100%;
   float: left;
   height: 100vh;
@@ -70,22 +63,86 @@ p {
           flex-direction: column;
 }
 
+.top-2 .top-2-text .home-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px auto;
+  gap: 5px;
+}
+
+.top-2 .top-2-text .profile-image-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+
+.top-2 .top-2-text .profile-image-input-container .upload-file-input {
+  max-width: 270px;
+  color: whitesmoke;
+  /* Color of the text*/
+  font-size: 20px;
+  /*25px Setting the font size of the text */
+  font-family: 'Architects Daughter', cursive;
+  background: black;
+  padding: 15px;
+  border: 0px solid white;
+  opacity: 85%;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.top-2 .top-2-text .profile-image-input-container .upload-file-submit {
+  color: whitesmoke;
+  /* Color of the text*/
+  font-size: 25px;
+  /* Setting the font size of the text */
+  font-family: 'Architects Daughter', cursive;
+  background: black;
+  padding: 15px;
+  border: 0px solid white;
+  opacity: 85%;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
 .top-2 .home-header {
-  color: black;
+  color: white;
   font-size: 10vw;
-  font-family: "Amatic SC", sans-serif;
-  text-shadow: 10px 10px black;
-  margin: 0px 190px;
-  text-shadow: 5px 5px white;
+  font-weight: bold;
+  font-family: 'Architects Daughter', cursive;
+  text-shadow: 5px 5px black;
+  white-space: nowrap;
 }
 
 .top-2 .let-me {
   color: white;
   text-decoration: none;
-  font-family: "Amatic SC", sans-serif;
 }
 
 .top-2:hover {
+  cursor: pointer;
   opacity: 100%;
 }
 
@@ -97,13 +154,14 @@ p {
 button {
   color: whitesmoke;
   /* Color of the text*/
-  font-size: 9vw;
+  font-size: 5vw;
   /* Setting the font size of the text */
-  font-family: "Amatic SC", sans-serif;
+  font-family: 'Architects Daughter', cursive;
   background: black;
   padding: 15px;
   border: 0px solid white;
-  opacity: 95%;
+  opacity: 85%;
+  border-radius: 5px;
   text-decoration: none;
 }
 
@@ -124,7 +182,7 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 90px;
   width: 100%;
   background-color: black;
   color: whitesmoke;
@@ -150,9 +208,13 @@ button:active {
   height: 100%;
 }
 
+.top header span {
+  color: yellow;
+}
+
 .top header p {
-  font-family: "Amatic SC", sans-serif;
-  font-size: 30px;
+  font-family: 'Bangers', cursive;
+  font-size: 35px;
 }
 
 .top header p .landing-direct {
@@ -178,26 +240,24 @@ button:active {
 
 .top header .navbar li a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   color: whitesmoke;
-  font-family: "Amatic SC", sans-serif;
 }
 
 .top header .navbar li a:hover {
   color: yellow;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .top header .ham {
-  height: calc(100% - 5px);
+  height: calc(100% - 39px);
   display: none;
 }
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 600px) {
   .top header .ham {
     display: inline-block;
-    background: whitesmoke;
     -webkit-box-shadow: 1px 1px 11px black;
             box-shadow: 1px 1px 11px black;
   }
@@ -208,5 +268,399 @@ button:active {
     display: none;
     background: red;
   }
+}
+
+.popup {
+  position: fixed;
+  background: rgba(196, 195, 195, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.popup .ham-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  -webkit-transform: translate(-6000px, 0px);
+          transform: translate(-6000px, 0px);
+}
+
+.popup .ham-ul .close-popup {
+  color: red;
+}
+
+.popup li {
+  list-style: none;
+  margin: 10px;
+}
+
+.popup li a {
+  text-decoration: none;
+  font-size: 60px;
+  color: black;
+}
+
+.popup li:hover {
+  border-bottom: 9px solid orange;
+}
+
+.disabled {
+  display: none;
+  background: black;
+}
+
+/*About Section BELOW*/
+.about-section {
+  background: #ffff71;
+  height: auto;
+}
+
+.about-section .about-text {
+  color: black;
+  font-size: 4vw;
+  font-family: 'Bangers', cursive;
+}
+
+.about-section .opening-times-text {
+  color: black;
+  font-size: 5vw;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px white;
+  margin: 10px 100px;
+}
+
+.about-section .left-right-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  max-width: 1028px;
+  width: calc(100% - 50px);
+  margin: 0px auto;
+}
+
+.about-section .left-right-main .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.about-section .left-right-main .left {
+  position: static;
+  overflow: visible;
+}
+
+.about-section .left-right-main .google-api {
+  max-width: 700px;
+  height: 300px;
+  width: calc(100% - 50px);
+  position: static;
+  overflow: visible;
+  color: black;
+  text-shadow: 5px 5px white;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 19px black;
+          box-shadow: 1px 1px 19px black;
+  margin: 45px 100px;
+}
+
+.login-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 500px;
+  width: calc(100% - 50px);
+  min-height: 100px;
+  margin: 25px 0px;
+}
+
+.login-form-container .register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 15px;
+  max-width: 600px;
+  width: calc(100% - 20px);
+  min-height: 350px;
+  position: absolute;
+  margin: 25px 0px;
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+  border-radius: 25px;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.login-form-container .update-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12px 15px;
+  max-width: 600px;
+  width: calc(100% - 20px);
+  min-height: 450px;
+  position: absolute;
+  margin: 25px 0px;
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+  border-radius: 25px;
+  background: black;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(0, 0, 0, 0.8)), color-stop(50%, rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.login-form-container .register-name, .login-form-container .register-email, .login-form-container .register-password {
+  max-width: 600px;
+  width: calc(100% - 50px);
+  min-height: 70px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Bangers', cursive;
+  outline: none;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.login-form-container .register-btn {
+  max-width: 600px;
+  width: calc(100% - 10px);
+  min-height: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Bangers', cursive;
+  background: #ffff56;
+  color: black;
+  opacity: 80%;
+  border-radius: 30px;
+}
+
+.login-form-container .register-btn:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.login-form-container .register-btn:active {
+  -webkit-box-shadow: 1px 1px 16px white;
+          box-shadow: 1px 1px 16px white;
+}
+
+/* Contact Form BELOW*/
+.contact-section {
+  background-color: #ffff71;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-section textarea {
+  max-width: 500px;
+  height: 150px;
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Bangers', cursive;
+  outline: none;
+  margin: 10px auto;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.contact-section input {
+  max-width: 500px;
+  height: 80px;
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Bangers', cursive;
+  outline: none;
+  margin: 10px auto;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.contact-section .btn-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 25%;
+  width: calc(100% - 0px);
+  min-height: 50px;
+  font-size: 7vw;
+  color: white;
+  border-radius: 15px;
+  text-decoration: none;
+  background: black;
+  text-align: center;
+  opacity: 90%;
+  margin: 70px auto;
+}
+
+.contact-section .btn-4:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.contact-section .btn-4:active {
+  -webkit-box-shadow: 1px 1px 11px black;
+          box-shadow: 1px 1px 11px black;
+}
+
+.contact-section .contact-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-section .contact-header {
+  color: black;
+  font-size: 8vw;
+  font-family: 'Bangers', cursive;
+  text-shadow: 5px 5px white;
+}
+
+/*Food Menu */
+.menu-section {
+  background: black;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: white;
+  text-align: center;
+}
+
+.menu-section .food-image1 {
+  background-image: url(food-image1.jpg);
+  background-size: cover;
+  max-width: 1000px;
+  min-height: 100%;
+  border-radius: 15px;
+  border: 3px solid black;
+}
+
+.menu-section .food-image2 {
+  background-image: url(food-image2.jpg);
+  background-size: cover;
+  max-width: 1000px;
+  min-height: 100%;
+  border-radius: 15px;
+  border: 3px solid black;
 }
 /*# sourceMappingURL=style.css.map */
