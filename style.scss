@@ -157,7 +157,7 @@ button{
         }
 
         p{
-            font-family: 'Bangers', cursive;
+            font-family: 'Architects Daughter', cursive;
             font-size:35px;
 
             .landing-direct{
@@ -201,10 +201,12 @@ button{
             .ham{
                 display:inline-block;
                 box-shadow: 1px 1px 11px black;
-            } &:hover{
-                cursor: pointer;
 
-            }
+                &:hover{
+                    cursor: pointer;
+                }
+
+            } 
 
             .navbar{
                 display:none;
@@ -239,7 +241,7 @@ button{
         transform: translate(-6000px, 0px);
 
         .close-popup{
-            color:red;
+            color:yellow;
         }
 
         // transform: translate(-600px,0px);
@@ -253,7 +255,8 @@ button{
             font-size: 60px;
             color: black;
         } &:hover{
-            border-bottom: 9px solid orange;
+            border-bottom: 3px solid yellow;
+            font-weight: bold;
         }
     }
 }
@@ -267,23 +270,40 @@ button{
 
 .about-section{
     // background: red;
-    background:rgb(255, 255, 113);
+    background:lightslategray;
     //height:727px;
     height:auto;
 
     .about-text{
         color:rgb(0, 0, 0);
-        font-size: 4vw;
-        font-family: 'Bangers', cursive;
+        font-size: 9vw;
+        color:rgb(255, 255, 255);
+        // font-size: 120px;
+        // font-size:20vw;
+        font-family: 'Architects Daughter', cursive;
+        margin:0px 30px;
+        text-shadow: 8px 8px rgb(0, 0, 0);
+        text-align: center;
 
         // margin:10px 300px;
+    }
+
+    .food1{
+        color:rgb(0, 0, 0);
+        font-size: 6vw;
+        color:black;
+        // font-size: 120px;
+        // font-size:20vw;
+        font-family: 'Architects Daughter', cursive;
+        margin:0px 30px;
+        text-align: center;
     }
 
     .opening-times-text{
         color:black;
         // font-size: 40px;
         font-size: 5vw;
-        font-family: 'Bangers', cursive;
+        font-family: 'Architects Daughter', cursive;
         text-shadow: 5px 5px rgb(255, 255, 255);
         margin:10px 100px;
     }

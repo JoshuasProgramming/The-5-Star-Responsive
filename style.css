@@ -213,7 +213,7 @@ button:active {
 }
 
 .top header p {
-  font-family: 'Bangers', cursive;
+  font-family: 'Architects Daughter', cursive;
   font-size: 35px;
 }
 
@@ -261,7 +261,7 @@ button:active {
     -webkit-box-shadow: 1px 1px 11px black;
             box-shadow: 1px 1px 11px black;
   }
-  .top header:hover {
+  .top header .ham:hover {
     cursor: pointer;
   }
   .top header .navbar {
@@ -319,7 +319,7 @@ button:active {
 }
 
 .popup .ham-ul .close-popup {
-  color: red;
+  color: yellow;
 }
 
 .popup li {
@@ -334,7 +334,8 @@ button:active {
 }
 
 .popup li:hover {
-  border-bottom: 9px solid orange;
+  border-bottom: 3px solid yellow;
+  font-weight: bold;
 }
 
 .disabled {
@@ -344,20 +345,33 @@ button:active {
 
 /*About Section BELOW*/
 .about-section {
-  background: #ffff71;
+  background: lightslategray;
   height: auto;
 }
 
 .about-section .about-text {
   color: black;
-  font-size: 4vw;
-  font-family: 'Bangers', cursive;
+  font-size: 9vw;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  margin: 0px 30px;
+  text-shadow: 8px 8px black;
+  text-align: center;
+}
+
+.about-section .food1 {
+  color: black;
+  font-size: 6vw;
+  color: black;
+  font-family: 'Architects Daughter', cursive;
+  margin: 0px 30px;
+  text-align: center;
 }
 
 .about-section .opening-times-text {
   color: black;
   font-size: 5vw;
-  font-family: 'Bangers', cursive;
+  font-family: 'Architects Daughter', cursive;
   text-shadow: 5px 5px white;
   margin: 10px 100px;
 }
