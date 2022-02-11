@@ -678,4 +678,92 @@ button:active {
   border-radius: 15px;
   border: 3px solid black;
 }
+
+.location-section {
+  background-color: yellowgreen;
+  height: auto;
+}
+
+.location-section .about-text {
+  color: black;
+  font-size: 9vw;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+  margin: 0px 30px;
+  text-shadow: 8px 8px black;
+  text-align: center;
+}
+
+.location-section .food1 {
+  color: black;
+  font-size: 6vw;
+  color: black;
+  font-family: 'Architects Daughter', cursive;
+  margin: 0px 30px;
+  text-align: center;
+}
+
+.location-section .opening-times-text {
+  color: black;
+  font-size: 5vw;
+  font-family: 'Architects Daughter', cursive;
+  text-shadow: 5px 5px white;
+  margin: 10px 100px;
+}
+
+.location-section .left-right-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  max-width: 1028px;
+  width: calc(100% - 50px);
+  margin: 0px auto;
+}
+
+.location-section .left-right-main .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.location-section .left-right-main .left {
+  position: static;
+  overflow: visible;
+}
+
+.location-section .left-right-main .google-api {
+  max-width: 600px;
+  height: 300px;
+  width: calc(100% - 50px);
+  position: static;
+  overflow: visible;
+  color: black;
+  text-shadow: 5px 5px white;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 1px 19px black;
+          box-shadow: 1px 1px 19px black;
+  margin: 45px 100px;
+}
 /*# sourceMappingURL=style.css.map */

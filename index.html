@@ -57,8 +57,21 @@
 
 
     <!--Location Section-->
-    <section>
+    <section class="location-section" id="Location">
+        <div class="left-right-main">
+            
+    
+            <div class="right">
+                <h2 style="font-size:15vw;">Location</h2>
+                <p class="about-text">1 Kinnerton St, London SW1X 8EA</p>
+                <h4 class="opening-times-text">Opening Times: Mon-Sat 08:00-23:00 Sunday Closed</h4>
+            </div>
 
+            <!--map contains the Google map api information-->
+            <div id="map" class="google-api left">
+            </div>
+
+        </div>
     </section>
 
     <section class="contact-section" id="Contact">
@@ -75,5 +88,7 @@
     </section>
 
     <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZOOoY0T_Z-BXajRx1TgsNc3GJr9_aQw&callback=myMap"></script>
+
 </body>
 </html>

@@ -612,4 +612,88 @@ button{
 
 //         }
 //     }
-// }
+// 
+
+
+.location-section{
+    // background: red;
+    background-color:yellowgreen;
+    //height:727px;
+    height:auto;
+
+    .about-text{
+        color:rgb(0, 0, 0);
+        font-size: 9vw;
+        color:rgb(255, 255, 255);
+        // font-size: 120px;
+        // font-size:20vw;
+        font-family: 'Architects Daughter', cursive;
+        margin:0px 30px;
+        text-shadow: 8px 8px rgb(0, 0, 0);
+        text-align: center;
+
+        // margin:10px 300px;
+    }
+
+    .food1{
+        color:rgb(0, 0, 0);
+        font-size: 6vw;
+        color:black;
+        // font-size: 120px;
+        // font-size:20vw;
+        font-family: 'Architects Daughter', cursive;
+        margin:0px 30px;
+        text-align: center;
+    }
+
+    .opening-times-text{
+        color:black;
+        // font-size: 40px;
+        font-size: 5vw;
+        font-family: 'Architects Daughter', cursive;
+        text-shadow: 5px 5px rgb(255, 255, 255);
+        margin:10px 100px;
+    }
+
+    .left-right-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height:100%;
+        max-width: 1028px;
+        width: calc(100% - 50px);
+        margin:0px auto;
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align:center;
+        }
+
+        .left{
+            position: static;
+            overflow: visible;
+        }
+
+        .google-api{
+            max-width: 600px;
+            height:300px;
+            width: calc(100% - 50px);
+            position: static;
+            overflow: visible;
+            // max-width: 200px;
+            // height: 200px;
+            color:black;
+            // font-size: 50px;
+            // font-family: "Amatic SC", sans-serif;
+            // margin:auto auto;
+            text-shadow:5px 5px white;
+            border-radius: 15px;
+            box-shadow: 1px 1px 19px black;
+            margin:45px 100px;
+        }
+    }
+}
