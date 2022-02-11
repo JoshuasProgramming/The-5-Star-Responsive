@@ -118,9 +118,10 @@ button{
     background:black;
     padding:15px;
     border: 0px solid white;
-    opacity: 85%;
+    opacity: 95%;
     border-radius: 5px;
     text-decoration: none;
+    margin:6px auto;
 
     &:hover{
         cursor: pointer;
@@ -408,7 +409,7 @@ button{
         min-height:70px;
         text-align: center;
         font-size: 25px;
-        font-family: 'Bangers', cursive;
+        font-family: 'Architects Daughter', cursive;
         outline: none;
         font-weight:bold;
         border-radius: 15px;
@@ -421,7 +422,7 @@ button{
         min-height:50px;
         text-align: center;
         font-size: 30px;
-        font-family: 'Bangers', cursive;
+        font-family: 'Architects Daughter', cursive;
         background:rgb(255, 255, 86);
         color:black;
         opacity: 80%;
@@ -456,7 +457,7 @@ button{
 
 /* Contact Form BELOW*/
 .contact-section{
-    background-color:rgb(255, 255, 113);
+    background-color:rosybrown;
     height:auto;
     display: flex;
     justify-content: baseline;
@@ -468,7 +469,7 @@ button{
         height:150px;
         text-align: center;
         font-size: 4vw;
-        font-family: 'Bangers', cursive;
+        font-family: 'Architects Daughter', cursive;
         outline: none;
         margin: 10px auto;
         font-weight:bold;
@@ -481,7 +482,7 @@ button{
         height:80px;
         text-align: center;
         font-size: 4vw;
-        font-family: 'Bangers', cursive;
+        font-family: 'Architects Daughter', cursive;
         outline: none;
         margin: 10px auto;
         font-weight:bold;
@@ -528,7 +529,7 @@ button{
     .contact-header{
         color:black;
         font-size: 8vw;
-        font-family: 'Bangers', cursive;
+        font-family: 'Architects Daughter', cursive;
         text-shadow:5px 5px white;
 
         .contact-form{
