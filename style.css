@@ -643,6 +643,7 @@ button:active {
 /*Food Menu */
 .menu-section {
   background: black;
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,7 +668,6 @@ button:active {
   max-width: 1000px;
   min-height: 100%;
   border-radius: 15px;
-  border: 3px solid black;
 }
 
 .menu-section .food-image2 {
@@ -676,7 +676,6 @@ button:active {
   max-width: 1000px;
   min-height: 100%;
   border-radius: 15px;
-  border: 3px solid black;
 }
 
 .location-section {
@@ -707,7 +706,7 @@ button:active {
   color: black;
   font-size: 5vw;
   font-family: 'Architects Daughter', cursive;
-  text-shadow: 5px 5px white;
+  text-shadow: 2px 2px white;
   margin: 10px 100px;
 }
 
