@@ -275,7 +275,8 @@ button:active {
 
 .popup {
   position: fixed;
-  background: rgba(196, 195, 195, 0.5);
+  background: black;
+  opacity: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +334,7 @@ button:active {
 .popup li a {
   text-decoration: none;
   font-size: 60px;
-  color: black;
+  color: white;
 }
 
 .popup li:hover {
