@@ -136,7 +136,7 @@ button{
 .top{
     display: flex;
     align-items: center;
-    height:90px;
+    height:52px;
     width:100%;
     background-color: black;
     color:whitesmoke;
@@ -202,6 +202,8 @@ button{
             .ham{
                 display:inline-block;
                 box-shadow: 1px 1px 11px black;
+                width:20px;
+                height:20px;
 
                 &:hover{
                     cursor: pointer;
@@ -338,12 +340,7 @@ button{
             width: calc(100% - 50px);
             position: static;
             overflow: visible;
-            // max-width: 200px;
-            // height: 200px;
             color:black;
-            // font-size: 50px;
-            // font-family: "Amatic SC", sans-serif;
-            // margin:auto auto;
             text-shadow:5px 5px white;
             border-radius: 15px;
             box-shadow: 1px 1px 19px black;
@@ -362,12 +359,7 @@ button{
     max-width:500px;
     width:calc(100% - 50px);
     min-height:100px;
-    // background: snow;
-    // border-radius:25px;
-    // box-shadow: 1px 1px 11px black;
     margin: 25px 0px;
-    // top:50%;
-    //padding:20px;
 
     .register-form{
         display: flex;
@@ -427,20 +419,6 @@ button{
         color:black;
         opacity: 80%;
         border-radius: 30px;
-        // position: absolute;
-        // top:85%;
-        // left: 51%;
-        // transform: translate(-50%, -50%);
-        // color:black;
-        // font-size: 30px;
-        // font-family: 'Bangers', cursive;
-        // background:rgb(255, 255, 86);
-        // padding:15px;
-        // border: 0px solid white;
-        // opacity: 80%;
-        // border-radius: 30px;
-        // width:400px;
-        // height:50px;
     }
     
     .register-btn:hover{
@@ -522,38 +500,13 @@ button{
         justify-content: baseline;
         align-items: center;
         flex-direction: column;
-
     }
-
-
     .contact-header{
         color:black;
         font-size: 8vw;
         font-family: 'Architects Daughter', cursive;
         text-shadow:5px 5px white;
-
-        .contact-form{
-            
-            // display: flex;
-            // justify-content: center;
-            // align-items:center;
-            // flex-direction: column;
-            // padding: 5px;
-            // max-width:600px;
-            // width:calc(100% - 20px);
-            // min-height:350px;
-            // position: absolute;
-            // margin: auto auto;
-            // color:black;
-            // font-size: 8vw;
-            // font-weight: bold;
-            // font-family: 'Bangers', cursive;
-            // // margin:0px auto;   
-        }
     }
-
-
-    
 }
 
 /*Food Menu */
@@ -574,8 +527,6 @@ button{
         max-width:1000px;
         min-height:100%;
         border-radius: 15px;
-        
-        
     }
 
     .food-image2{
@@ -584,42 +535,11 @@ button{
         max-width:1000px;
         min-height:100%;
         border-radius: 15px;
-        
     }
 }
 
-// /*Food Menu*/
-
-// .menu-section{
-//     background-color:rgb(255, 255, 113);
-//     .food-container{
-
-//         .food-image1{
-//             background-image: url(food-image1.jpg);
-//             background-size:cover;
-//             max-width:300px;
-//             height:200px;
-//             margin:20px auto;
-            
-//             // min-height: 50%;
-//             // width:45%;
-//             // // float: left;
-//             // height: 100%;
-//             // position: inherit;
-
-//         }
-
-//         .food-image2{
-
-//         }
-//     }
-// 
-
-
 .location-section{
-    // background: red;
     background-color:yellowgreen;
-    //height:727px;
     height:auto;
 
     .about-text{

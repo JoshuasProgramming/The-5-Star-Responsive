@@ -183,7 +183,7 @@ button:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90px;
+  height: 52px;
   width: 100%;
   background-color: black;
   color: whitesmoke;
@@ -261,6 +261,8 @@ button:active {
     display: inline-block;
     -webkit-box-shadow: 1px 1px 11px black;
             box-shadow: 1px 1px 11px black;
+    width: 20px;
+    height: 20px;
   }
   .top header .ham:hover {
     cursor: pointer;
